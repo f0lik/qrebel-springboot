@@ -39,9 +39,9 @@ public class SupplementController {
 		LOG.debug(results.toString());
 
 //        DEMO: Show Exception is thrown
-//        if (true) {
-//            throw new RuntimeException("KEYBOARD NOT FOUND, PRESS F1 TO CONTINUE");
-//        }
+/*        if (true) {
+            throw new RuntimeException("KEYBOARD NOT FOUND, PRESS F1 TO CONTINUE");
+        }*/
         return "supplements/supplementList";
     }
 
@@ -72,11 +72,11 @@ public class SupplementController {
     private String getRemoteSupplementsJson() {
         StringBuilder sb = new StringBuilder();
 //        DEMO: Show slow request example
-        try {
+/*        try {
             Thread.sleep(10000); // fake delay
         } catch (InterruptedException e) {
             e.printStackTrace();
-        }
+        }*/
 
         try {
             String spec = "https://supplements.cfapps.io/";
