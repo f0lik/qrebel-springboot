@@ -72,11 +72,11 @@ public class SupplementController {
     private String getRemoteSupplementsJson() {
         StringBuilder sb = new StringBuilder();
 //        DEMO: Show slow request example
-/*        try {
+        try {
             Thread.sleep(10000); // fake delay
         } catch (InterruptedException e) {
             e.printStackTrace();
-        }*/
+        }
 
         try {
             String spec = "https://supplements.cfapps.io/";
